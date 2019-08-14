@@ -17,11 +17,7 @@ public class HellohumanApplication{
 	
 	@RequestMapping("/")
     public String index1(){
-		
-		
-			return "Hello Human";
-
-    }
+			return "Hello Human";}
 
 	@RequestMapping("/")
     public String index(@RequestParam(value="name", required=false) String searchQuery) {
