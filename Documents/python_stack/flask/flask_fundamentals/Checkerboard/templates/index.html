@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='mystyle.css')}}">       
+    </head>        
+<body>
+    
+    <h1>how are you?today and later</h1>
+{%- for x in range(4`       AQAQ): -%}
+    <div>
+        {%- for x in range(4): -%}
+            <div class="columns"></div><!--
+            --><div class="columns2"></div>
+    {%- endfor -%}
+    </div>
+
+    <div>
+        {%- for x in range(4): -%}
+            <div class="columns2"></div><!--
+            --><div class="columns"></div>
+    
+    {%- endfor -%}
+    </div>
+    {%- endfor -%}
+</body>
+</html>

@@ -1,0 +1,25 @@
+package ObjectMaster;
+
+public class Samurai extends Human{
+	int numberofSamurai =0;
+
+	Samurai(){
+		numberofSamurai +=1;
+		this.setHealth(200);
+}
+	
+	void deathBlow(){
+		this.setHealth(100);
+	}
+	
+	void meditate(){
+		this.setHealth(200);
+		
+	}
+
+	int howMany(){
+		
+		return numberofSamurai;
+	}
+	
+}

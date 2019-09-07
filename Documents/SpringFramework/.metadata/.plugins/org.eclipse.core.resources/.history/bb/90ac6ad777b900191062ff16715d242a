@@ -1,0 +1,20 @@
+
+package ZooKeeper;
+public class GorillaTest {
+
+	public static void main(String[] args) {
+		
+		Gorilla bike = new Gorilla();
+		// TODO Auto-generated method stub
+		
+		throwThings();
+		throwThings();
+		throwThings();
+		eatBananas();
+		Climb();
+				
+			
+		}
+
+	}
+

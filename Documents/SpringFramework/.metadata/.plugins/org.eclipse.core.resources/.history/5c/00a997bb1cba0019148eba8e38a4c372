@@ -1,0 +1,21 @@
+package ObjectMaster;
+
+public class Wizard extends Human{
+	
+	Wizard(){
+		setHealth(50);
+		setIntelligence(8);
+	}
+	
+	void heal() {
+		setHealth(this.getIntelligence());
+		System.out.println("Wizard.heal():" + this.getIntelligence());
+	}
+	
+	void fireball(){
+		this.setHealth(3*this.getIntelligence());
+		System.out.println("Wizard.heal():" + this.getIntelligence());
+	}
+	
+
+}

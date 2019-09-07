@@ -1,0 +1,23 @@
+package ObjectMaster;
+
+public class Ninja extends Human{
+
+	Ninja(){
+		setStealth(10);
+	}
+	
+	void steal(Human otherhuman){
+		int value = otherhuman.getHealth();
+		int value2 = getStealth();
+		int value3 = value -value2;
+		int value4 = getHealth();
+		setHealth(value3 + value4);
+		System.out.println("Inside the Ninja.steal():" + getHealth());
+	}
+		
+
+	
+	void runAway() {
+		System.out.println("Inside the Ninja.runAway() function which does nothing");
+	}
+}

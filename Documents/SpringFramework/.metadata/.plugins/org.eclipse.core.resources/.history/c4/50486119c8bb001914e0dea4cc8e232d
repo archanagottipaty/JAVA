@@ -1,0 +1,16 @@
+package com.codingdojo.web.models;
+
+public class Cat extends Animal {
+	
+	public Cat() {}
+	
+	public Cat(String name, String breed, int weight) {
+		super(name,breed,weight);
+	}
+	
+	String showAffection() {
+		
+		return "Your" +Breed+ "cat" +Name+ "at looked at you with affection.";
+	}
+
+}

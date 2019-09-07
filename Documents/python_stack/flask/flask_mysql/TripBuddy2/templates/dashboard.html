@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dashboard.css') }}">
+    </head>
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script src="" async defer></script>
+
+        <div id="top">
+            <p>Hello {{session['name']}}</p>
+            <a href="/logout">Logout</a>
+            <a href="/newtrip"><button>Create a new trip!</button></a>
+
+        </div>
+
+        <div>
+                <table border="1">
+                        <tr>
+                          <th>Destination</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                          <th>Plan</th>
+                          <th>Actions</th>
+                        </tr>
+                        {%for one_trip in trips%}
+                        <tr>
+                            
+                          <td><a href="/viewtrip/{{one_trip['tripsid']}}">{{one_trip['destination']}}</td>
+                          <td>{{one_trip['start']}}</td>
+                          <td>{{one_trip['end']}}</td>
+                          <td>{{one_trip['plan']}}</td>
+                          <td>
+                            <a href="/remove/{{one_trip['tripsid']}}">Remove</a>
+                            <a href="/trips/edit/{{one_trip['tripsid']}}">Edit</a>
+                          </td>
+                          {%endfor%}
+                        </tr>
+                      </table>
+        </div>
+
+    </body>
+</html>

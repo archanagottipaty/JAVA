@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Theater</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+            
+        <h3>Here is the list of theaters playing {{session["movie"]}} movie:</h3>
+        {% if  not theaters %}
+        <p>There are no theaters playing {{session["movie"]}}</p>
+        {% endif %}
+
+        <form action="process.php" method="post">
+            <table>
+                <th>Name</th>
+            {%for one_theater in theaters%}
+                        <tr>
+                          <td>{{one_theater['Name']}}</td>
+                        </tr>   
+            {%endfor%}
+                    </table>
+
+            <a href="/" >BACK</a>
+           
+            
+    </body>
+</html>

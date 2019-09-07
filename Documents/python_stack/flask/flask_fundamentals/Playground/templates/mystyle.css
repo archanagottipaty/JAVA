@@ -1,0 +1,22 @@
+* {
+    border: 2px solid red;
+    border-radius: 2px;
+  }
+
+.boxes{
+    background-color: rgb(94, 148, 211);
+    display:inline-block;
+    width: 250px;
+    height: 250px;
+    /* margin-left: 65px; */
+     margin-top: 200px; 
+  
+}
+#second {
+    text-align: center;
+}
+h1{text-align: center;
+    margin: 0px;
+display:block;}
+
+  

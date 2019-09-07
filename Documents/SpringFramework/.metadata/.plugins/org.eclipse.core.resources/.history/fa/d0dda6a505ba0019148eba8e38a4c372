@@ -1,0 +1,18 @@
+package ObjectMaster;
+
+import ZooKeeper.Gorilla;
+
+public class HumanTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Human myHuman = new Human();
+		Human myHuman1 = new Human();
+		
+		myHuman.getStrength();
+		
+		myHuman.attack(myHuman1);
+		
+	}
+
+}

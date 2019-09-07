@@ -1,0 +1,13 @@
+.columns
+{ width: 200px;
+    display: inline-block;
+border:1px solid lightgray;
+padding:10px;}
+
+#login{
+    vertical-align: top;
+}
+
+.top{
+    display: inline-block;
+}

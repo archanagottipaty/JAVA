@@ -1,0 +1,36 @@
+.columns{
+    width: 300px;
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+
+}
+
+#comments{
+    display:block;
+}
+#location{
+ 
+ margin-bottom: 5px;
+
+}
+
+#language{
+
+    margin-top: 10px;
+}
+
+#column2{
+    margin-top: 10px;
+    vertical-align: top;
+    display: inline-block;
+    width: 30px;
+}
+
+form{
+    margin-top: 10px;
+    display:inline-block;
+    margin-bottom: 7px;
+}
+
+input{ margin-bottom: 10px; }

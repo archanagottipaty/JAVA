@@ -1,0 +1,8 @@
+package com.codingdojo.web.models;
+
+public class Animal {
+
+	private String Name;
+	private String Breed;
+	private int weight;
+}

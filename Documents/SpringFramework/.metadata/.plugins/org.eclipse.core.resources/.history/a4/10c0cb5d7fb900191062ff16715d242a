@@ -1,0 +1,11 @@
+package ZooKeeper;
+
+public class mammal{
+public int energyLevel=100;
+
+public void displayEnergy() {
+	energyLevel = 100;
+	System.out.println("Mammal's Energy Level is:" + energyLevel);
+}
+
+}

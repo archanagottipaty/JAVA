@@ -1,0 +1,16 @@
+package ObjectMaster;
+
+public class Ninja extends Human{
+
+	Ninja(){
+		setStealth(10);
+	}
+	
+	void steal() {
+		System.out.println("Inside the Ninja.steal() function which does nothing");
+	}
+	
+	void runAway() {
+		System.out.println("Inside the Ninja.runAway() function which does nothing");
+	}
+}

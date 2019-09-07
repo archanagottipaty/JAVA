@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>WELCOME</h1>
+        <h1>All My Pets</h1>
+        <table width:400px border="1" margin:300px auto>
+                <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                </tr>
+            {% for one_pet in all_pets %}
+            <tr>
+            <th> {{one_pet["pet_id"]}}</th>
+            <th>{{one_pet["name"]}}</th>
+            <th>{{one_pet["type"]}}</th>
+            </tr>          
+{% endfor %}
+</table> 
+<form action="/create_friend" method="POST">
+    <p>Name: <input type="text" name="Pet"></p>
+    <p>Type: <input type="text" name="Type"></p>
+    <input type="submit" value="Add Pet">
+</form>
+
+        <script src="" async defer></script>
+    </body>
+</html> 

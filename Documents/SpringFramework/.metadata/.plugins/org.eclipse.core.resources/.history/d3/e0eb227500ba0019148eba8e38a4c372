@@ -1,0 +1,16 @@
+package ObjectMaster;
+
+public class Human {
+
+	private int strength;
+	private int intelligence;
+	private int stealth;
+	private int health;
+	
+	
+	public void attack(Human attackedHuman) {
+		
+		attackedHuman.health -= this.strength;
+	}
+	
+}

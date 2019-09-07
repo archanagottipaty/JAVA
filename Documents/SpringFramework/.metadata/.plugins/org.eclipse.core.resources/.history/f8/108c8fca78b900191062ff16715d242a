@@ -1,0 +1,17 @@
+
+package ZooKeeper;
+import Gorilla;
+public class GorillaTest{
+
+	public static void main(String[] args) {
+		
+		Gorilla myGorilla = new Gorilla();
+		// TODO Auto-generated method stub
+		
+		myGorilla.throwThings();
+		myGorilla.throwThings();
+		myGorilla.throwThings();
+		myGorilla.eatBananas();
+		myGorilla.Climb();
+}}
+

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
+        <style>
+            
+            /* * { */
+                /* border: 2px solid red; */
+                /* border-radius: 2px; */
+              /* } */
+            
+            .boxes{
+                background-color:{{color}};
+                display:inline-block;
+                width: 250px;
+                height: 250px;
+                /* margin-left: 65px; */
+                 margin-top: 200px;   
+            }
+            #second {
+                text-align: center;
+            }
+            h1{text-align: center;
+                margin: 0px;
+            display:block;}
+        </style>
+            
+              
+    </head>
+            
+<body>
+    <div> <h1>Welcome!</h1></div>
+    <div id="second">
+        {% for x in range(times):%}
+        <div class="boxes"></div>
+        {% endfor %}
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+package ObjectMaster;
+
+public class Human {
+
+	private int strength;
+	private int intelligence;
+	private int stealth;
+	private int health;
+	
+	
+	public void attack(Human attackedHuman) {
+		
+		attackedHuman.health -= this.strength;
+	}
+	
+	
+	public int getStrength(){
+        return strength;
+    }
+    // setter
+    public void setStrength(int passedStrength) {
+        this.strength = passedStrength;        // 1
+    }
+    
+    public int getIntelligence() {
+        return intelligence;
+    }
+    
+    public void setIntelligence(int passedIntelligence) {
+        this.intelligence = passedIntelligence;        // 1
+    }
+    
+    public int getStealth() {
+        return stealth;        // 1
+    }
+    public void sethealth(int passedHealth) {
+        this.health = passedHealth;        // 1
+    }
+    public int getHealth() {
+        return health;        // 1
+    }
+   
+}

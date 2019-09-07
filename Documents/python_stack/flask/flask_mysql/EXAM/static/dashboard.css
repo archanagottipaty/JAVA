@@ -1,0 +1,7 @@
+#top{
+}
+
+p,a,form{
+    display:inline-block;
+    margin-right: 50px;
+}

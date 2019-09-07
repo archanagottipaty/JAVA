@@ -1,0 +1,20 @@
+{{user[0]}}
+{% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+    {% if messages %}                            <!-- check if there are any messages -->
+        {% for message in messages %}            <!-- loop through the messages -->
+            <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+      <p>Full Name: {{ user[0]["first_name"]+user[0]["last_name"] }}</p>
+      <p>E-mail:{{ user[0]["handle"] }}</p>
+      <p>Created_at:{{ user[0]["created_at"] }}</p>
+      <p>Updated_at:{{ user[0]["updated_at"] }}</p>
+      <div id="users">
+      <a href="/users/{{user[0]['id']}}/edit">Edit</a>
+      <a href="mailto:webmaster@example.com">Delete</a>
+      </div>
+
+
+

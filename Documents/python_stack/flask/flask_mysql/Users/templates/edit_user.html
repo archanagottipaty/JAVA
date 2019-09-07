@@ -1,0 +1,10 @@
+{{user[0]}}
+
+<form action="/users/{{user[0]['id']}}/edit" method="POST">
+    <p>First Name: <input type="text" name="First Name" value = "{{user[0]['first_name']}}"></p>
+    <p>Last Name: <input type="text" name="Last Name" value = "{{user[0]['last_name']}}"></p>
+    <p>Email: <input type="text" name="Email" value="{{user[0]['handle']}}"></p>
+    <input id="mybutton" type="submit" value="Update">
+</form>
+
+<a href="/users/{{user[0]['id']}}">Show User</a>

@@ -1,0 +1,42 @@
+
+body {text-align: center;
+margin-top: 200px;
+font-family:verdana;}
+
+H3{
+    /* text-align: center; */
+    color: midnightblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* text-shadow: 1px 0px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input{ width: 200px; height: 20px;
+    color: midnightblue;
+    border: 2px solid darkblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+ #submit1
+{background-color: indianred;
+width: 100px;
+box-shadow: 5px;
+font-size: 10px;
+border-radius: 5px;
+}
+
+
+
+

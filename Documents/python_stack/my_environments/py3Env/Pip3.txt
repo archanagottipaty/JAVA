@@ -1,0 +1,42 @@
+1.  Pip3 install Django==1.11.9
+pip install [options] <requirement specifier> [package-index-options] ...
+
+Pip install (name of package and version number) if version number is not specified it installs the latest version
+
+2.pip list
+List installed packages, including editables.
+
+3.deactivate (This will deactivate your virtual environment)
+
+4. Pip3 list
+5. There are more packages listed. Virtualenv and selenium are also listed.
+6.source myEnvironments/py3Env/bin/activate
+* It read and execute commands from given FILENAME and return.
+7.
+(py3Env) Archanas-MacBook:my_environments archanagottipaty$ pip install Django==1.11.9
+Requirement already satisfied: Django==1.11.9 in ./py3Env/lib/python3.7/site-packages (1.11.9)
+Requirement already satisfied: pytz in ./py3Env/lib/python3.7/site-packages (from Django==1.11.9) (2019.1)
+
+Output is saying it is already installed. 
+
+8.pip freeze
+
+Freeze output less information than list
+
+9.
+cd ~/Desktop
+pip freeze > requirements.txt
+
+The output of freeze is inside the file
+
+10.pip uninstall Django
+
+Uninstalls Django.  Does not specify version
+
+11.pip show Django
+
+Nothing is shown
+
+12. Pip search Flask
+
+All Packages with flask in name are outputted.

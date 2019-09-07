@@ -1,0 +1,25 @@
+package ZooKeeper;
+
+public class GiantBat extends mammal{
+	int super.energyLevel = 300;
+	
+	public void fly() {
+	
+		System.out.println("Fly():shwoooooooooooooosh");}
+	
+	public void eatHumans() {
+		super.energyLevel += 25;
+		}
+	
+	public void attackTowns() {
+		super.energyLevel -=100;
+		System.out.println("attackTowns():Fire!Fire!" + energyLevel);}
+	
+	
+public void displayEnergy() {
+	System.out.println("Energy level is: super" + super.energyLevel);
+	System.out.println("Energy level is:" + energyLevel);
+	
+}}
+
+

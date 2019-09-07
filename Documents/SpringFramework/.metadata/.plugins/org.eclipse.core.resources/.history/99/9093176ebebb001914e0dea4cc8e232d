@@ -1,0 +1,10 @@
+package com.codingdojo.web.models;
+
+public class Dog extends Animal{
+	
+	String showAffection() {
+		
+		return "Your cat looks at you with affection";
+	}
+
+}

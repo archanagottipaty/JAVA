@@ -1,0 +1,20 @@
+package ZooKeeper;
+
+public class Gorilla extends Mammal {
+	
+	public throwThings(){
+		energyLevel -=5;
+		System.out.println("throwThings():energylevel:" + energyLevel);
+	}
+	
+	public eatBananas(){
+		energyLevel += 10;
+		System.out.println("throwThings:eatBananas():" + energyLevel);}
+	}
+
+	public Climb(){
+		
+		energyLevel  -= 10;
+		System.out.println("Climb():energylevel:" + energyLevel);
+	}
+}

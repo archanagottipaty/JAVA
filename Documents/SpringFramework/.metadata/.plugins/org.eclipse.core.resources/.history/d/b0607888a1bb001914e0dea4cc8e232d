@@ -1,0 +1,7 @@
+*{padding: 0px;}
+
+#index{background-color: blue;
+display:inline-block;
+height: 30px;
+width: 30px;
+ }

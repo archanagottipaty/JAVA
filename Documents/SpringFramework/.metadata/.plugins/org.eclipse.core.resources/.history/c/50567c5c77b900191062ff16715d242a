@@ -1,0 +1,10 @@
+
+public class mammal{
+private int energyLevel;
+
+public displayEnergy() {
+	energyLevel = 100;
+	System.out.println("Mammal's Energy Level is:" + energyLevel);
+}
+
+}

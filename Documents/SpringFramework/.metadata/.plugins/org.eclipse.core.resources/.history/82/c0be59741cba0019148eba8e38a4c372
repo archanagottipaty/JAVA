@@ -1,0 +1,31 @@
+package ObjectMaster;
+public class HumanTest{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Human myHuman = new Human();
+//		Human myHuman1 = new Human();
+//		
+//		myHuman.getStrength();
+//		myHuman.setStrength(55);
+//		myHuman.getStrength();
+//		
+//		myHuman.attack(myHuman1);
+//		myHuman.getStrength();
+//		myHuman1.getHealth();
+		
+		Wizard myWizard = new Wizard();
+		Ninja myNinja = new Ninja();
+		Samurai mySamurai = new Samurai();
+		
+		myNinja.getHealth();
+		myNinja.getStealth();
+		
+		
+		
+		
+		
+		
+	}
+
+}

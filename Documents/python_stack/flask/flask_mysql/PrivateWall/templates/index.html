@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- based on the folder structure on the right -->
+        <!-- linking a css style sheet -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle.css') }}">
+        <!-- <link rel = "stylesheet" type = "text/css" href = "mystyle.css"> -->
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Login and Registration</h1>
+        {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+        {% if messages %}   
+        <!-- {{messages}}                    check if there are any messages -->
+        {% for message in messages %}            <!-- loop through the messages -->
+            <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <div class='columns'>
+        <form method="post" action ="/register">
+            <h3>Register here!</h3>
+            First Name:
+            <input type="text" name="first"> <br><br>
+            Last Name:
+            <input type="text" name="last"><br><br>
+            Email:
+            <input type="text" name="email"><br><br>
+            Password:
+            <input type="text" name="password"><br><br>
+            Confirm Password:
+            <input type="text" name="confirm_password"><br><br>
+            <input type="submit" name="register" value="Register">
+        </form>
+        </div>
+        <div class='columns'>
+            <form method="post" action = "/login">
+            <h3>Login here!</h3>
+            Email:
+            <input type="text" name="email"> <br><br>
+            Password:
+            <input type="text" name="password"><br><br>
+            <input type="submit" name="submit_button" value="Login">
+            </form>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

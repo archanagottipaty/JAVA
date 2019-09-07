@@ -1,0 +1,71 @@
+package BankAccount;
+
+public class BankAccount{
+	private String accountNumber;
+	private double checkingBalance;
+	private double savingsBalance;
+	static int numberofAccounts = 0;
+	static int totalMoney;
+	
+	
+	BankAccount(){	
+	numberofAccounts +=1;
+	}
+	
+	
+	private String returnsRandomAcccountNumber() {
+		String myString = "";
+		
+		return myString;
+	}
+	
+	
+	 double getCheckingBalance(){
+	 return checkingBalance;
+	}
+	
+	 double getSavingsBalance(){
+		 return savingsBalance;
+		}
+	 
+//	 void depositMoney(double accountNumber) {
+//	
+//	
+//	
+//	 }
+	 
+	 void withdrawMoney(char checkorsavings,double  amount) {
+		 if (checkorsavings == 'c' & amount > checkingBalance)
+		 {  System.out.println("Insufficient funds"); 
+		 	return;}
+		 if (checkorsavings == 'c'){
+				 checkingBalance -= amount;
+				 return;
+		 }
+		 if ((checkorsavings == 's') & (amount > savingsBalance))
+		 {  System.out.println("Insufficient funds"); 
+		 	return;}
+		 if (checkorsavings == 's'){
+				 savingsBalance -= amount;
+				 return;
+		 }
+		 
+	 }
+	 void seeTotalMoney() {
+		 double total = checkingBalance + savingsBalance;
+		 System.out.println("The total money in both accounts is:" + total);
+	 }
+	 
+	 
+	 void setAccountNumber(String value){ 
+		  accountNumber = value;	
+	 }
+	 
+	 void setcheckingBalance(double value){
+		 checkingBalance = value;
+		 
+	 }
+	 void setsavingsBalance(double value){
+		 savingsBalance = value;
+	 }
+}
