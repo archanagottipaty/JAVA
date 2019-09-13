@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>This is the details page </title>
+</head>
+
+<body>
+    <% for (var cat of cuddles) { %>
+	<img src =" <%= cat.picture %>"> 
+        <h3>Favorite Food: <%= cat.favfood %></h3>
+        <h4>Age: <%= cat.age %></h4>
+        <hr>
+    <% } %>
+
+
+</body>
+</html>
