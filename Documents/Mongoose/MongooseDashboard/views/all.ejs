@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Rabbits</title>
+    </head>
+
+
+<h2> Here are all your rabbits</h2>
+
+<html>
+<body>
+    
+    <% for (var rabbit of rabbits) { %>
+      <h3> <a href = "/rabbits/<%=rabbit._id %>">Name: <%= rabbit.name %></a></h3>
+        <hr>
+    <% } %>
+</body>
+</html>
+
+</html>
+
