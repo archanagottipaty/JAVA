@@ -66,7 +66,7 @@ Rabbit.updateOne({_id:req.params.id}, {
 });
 app.get('/rabbits/destroy/:id', (req,res) => {
 // ...delete 1 document that matches the query object criteria
-Rabbit.remove({_id:req.params.id})
+Rabbit.deleteOne({_id:req.params.id})
     .then(deletedUser => {
     res.redirect('/')
         // logic (if any) with successfully removed deletedUser object
